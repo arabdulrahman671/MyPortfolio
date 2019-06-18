@@ -1,0 +1,15 @@
+#Navigator{
+    height: 100%;
+    padding: 50px;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.nav-elements a{
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.nav-elements a:hover{
+    color: #85cb33;
+    transform: scaleX(1.2rem);
+}
