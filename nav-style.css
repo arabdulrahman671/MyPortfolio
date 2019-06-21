@@ -1,15 +1,47 @@
+html,body{
+    background-image: url("images/Inkedbackground_LI.jpg");
+}
 #Navigator{
-    height: 100%;
     padding: 50px;
-    font-size: 5rem;
     font-weight: bold;
 }
 .nav-elements a{
     text-decoration: none;
     transition: all 1s;
+    font-size: 5rem;
 }
 
 .nav-elements a:hover{
-    color: #85cb33;
-    transform: scaleX(1.2rem);
+    color: #ef0f30;
+    transform: translateX(4);
+}
+
+@media (min-width: 320px) {
+    hr{
+        width: 100%;
+    }
+    .nav-image{
+
+    }
+    #Navigator{
+        padding: 50px;
+        font-weight: bold;
+    }
+    .nav-elements a{
+        text-decoration: none;
+        transition: all 1s;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 570px) {
+    .nav-elements a{
+        text-decoration: none;
+        transition: all 1s;
+        font-size: 1.5rem;
+    }
+    hr{
+        width: 100%;
+    }
 }

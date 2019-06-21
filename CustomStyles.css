@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-}
-body,html{
+
+body,html {
     font-family: 'Noto Sans HK', sans-serif;
-    margin: 0;
-    height:10px;
+    color: #ffffff;
+    /*background-image: url("images/Inkedbackground_LI.jpg");
     background-color: black;
-    background-image: url("");
-    color: #efffc8;
+    background-repeat:no-repeat ;*/
+    margin: auto;
+    background-color: black;
 }
 /*Navigation*/
 #navigation{
     position: fixed;
     width: 100%;
+    margin-top: 0%;
+    padding-top: 0;
 }
 nav a img{
     border-radius: 50%;
@@ -27,23 +27,58 @@ nav a img{
     padding-top: 150px;
     padding-bottom: 50px;
 }
-.my-name{
-    text-shadow: black;
-    font-size: 3em;
-    font-weight: bold;
+
+.button{
+    border-radius: 30px;
+    color:#0d1f22;
+    background-color: #ef0f30;
+    border: none;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+    box-shadow: black solid;
+    margin-top: 20px;
 }
-#social-icons .fa-twitter,.fa-envelope,.fa-facebook,.fa-instagram {
+.button:hover{
+    opacity: 0.9;
+}
+.button:visited{
+    border: none;
+    background-color: #ef0f30;
+    opacity: 0.7;
+}
+
+.my-name{
+    color: #ef0f30;
+    font-size: 3em;
+    font-weight: 900;
+   letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+#social-icons .fa-twitter,#social-icons .fa-envelope,#social-icons .fa-linkedin,#social-icons .fa-instagram {
     color: #a5cbc3;
     text-align: center;
     padding: 30px;
     margin-top: 10px;
     transition: all 0.5s ;
+    font-size: 4em;
 }
 #social-icons .fa:hover{
-    color: #85cb33;
-    transform: translateY(-10px);
 
+    transform: translateY(-10px);
 }
+#social-icons .twitter:hover{
+    color: #00A6E9;
+}
+#social-icons .instagram:hover{
+    color: #D42C76;
+}
+#social-icons .linkedin:hover{
+    color: #0074B0;
+}
+#social-icons .gmail:hover{
+    color: #AE3020;
+}
+
 /*seperator*/
 #seperator{
     width: 50%;
@@ -70,8 +105,9 @@ nav a img{
 .heading{
     letter-spacing: 0.3rem;
     font-size: 3rem;
-    opacity: 1;
+    opacity: 0.85;
     padding-bottom: 100px;
+    font-weight: bolder;
 }
 .translate{
     transform: translateY(-134px);
@@ -87,8 +123,16 @@ nav a img{
 }
 
 /*my-work*/
-
+#my-work{
+    background-image: url("images/Inkedbackground_LI.jpg");
+    background-attachment:fixed ;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 200px ;
+    padding-top: 100px;
+}
 .websites{
+    margin: auto;
     width:300px;
     height: 300px;
     background-color: white;
@@ -104,6 +148,34 @@ nav a img{
     overflow: visible;
     visibility: visible;
 }
+#get-started{
+
+    margin-top: 200px;
+}
+#get-started h1{
+    font-size: 100px;
+    opacity: 0.7;
+    font-weight: bolder;
+
+
+}
+span{
+    font-size: 2rem;
+    opacity: 0.7;
+    letter-spacing: 0.3rem;
+}
+#clients-counter,#Projects-counter{
+    color: #ef0f30;
+    font-size: 5rem;
+    opacity: 0.5rem;
+
+
+
+}
+
+
+
+
 
 /*footer */
 
@@ -111,23 +183,88 @@ nav a img{
     height: 300px;
     margin-top: 200px;
     padding: 50px;
-    background-color:;
-
+    background-color:black;
 }
-
-
-
-
-
-
-
 hr{
     border-top: 1px solid #85cb33;
 }
 
+@media (max-width: 330px) {
+    .my-name{
+        letter-spacing: 0.9em;
+    }
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .background{
+        width: auto;
+    }
+    .heading{
+        font-size: 1.5em;
+    }
+    #banner{
+        padding-bottom: 240px;
+    }
+    .my-name{
+        letter-spacing: 0;
+        width: 315px;
+    }
+    .websites{
+        width:200px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #social-icons .fa-twitter,#social-icons .fa-envelope,#social-icons .fa-linkedin,#social-icons .fa-instagram{
+        font-size: 2rem;
+        padding: 10px;
+
+    }
+    .bd-example{
+        width: 310px;
+    }
+    p.text{
+        font-size: 0.8em;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    hr{
+        align-item: center;
+        width: 300px;
+        margin: auto;
+    }
+    #get-started h1{
+        font-size: 50px;
+    }
+
+    }
 
 
 
+
+
+//* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+    .websites{
+    width:220px;
+    height: 220px;
+}
+}
+
+/* Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
 
 
 
