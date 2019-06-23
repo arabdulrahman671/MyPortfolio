@@ -44,7 +44,9 @@ input,textarea{
 input::placeholder,textarea::placeholder{
     color: #85cb33;
 }
-
+p.alert{
+display:none;
+}
 input:hover,input:focus,textarea:hover,textarea:focus{
      border-bottom: solid red thick;
 

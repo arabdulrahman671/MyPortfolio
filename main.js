@@ -15,7 +15,7 @@ anime({
     innerHTML: [0, 1000],
     easing: 'linear',
     round: 10, // Will round the animated value to 1 decimal
-    loop:5,
+    loop:7,
 });
 
 anime({
@@ -23,5 +23,5 @@ anime({
     innerHTML: [0, 420],
     easing: 'linear',
     round: 10, // Will round the animated value to 1 decimal
-    loop: 5,
+    loop: 7,
 });
