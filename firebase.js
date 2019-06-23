@@ -13,7 +13,7 @@
 
   var messagesRef = firebase.database().ref('messages');
 
-document.getElementById('submission').addEventListener('click', submitForm);
+document.getElementById('submission').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e){
