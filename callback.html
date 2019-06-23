@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="callback.css">
     <link rel="stylesheet"  href="aos.css">
+    <link rel="shortcut icon" type="image/icon" href="images/1561296282.ico">
     <script  type="text/javascript" src="validation.js"></script>
-    <title>Rahman</title>
+    <title>M.A.Rahman</title>
 </head>
 <body>
 <!--Nav Bar-->
@@ -38,23 +39,21 @@
                     I tend to reply fairly quickly</p>
 
                 <p id="hellomsg"></p>
-                <form name="callback" id="contactForm" onsubmit="return validate();">
-                    <p class="alert"> </p>
-
-                 <input type="text" name="Name" id="name" placeholder="Your Name" required/><br>
-                 <input type="email" name="mail" id="email" placeholder="Your E-mail id" required ><br>
-                    <input type="tel" name="number" id="phone"  placeholder="Phone Number" minlength="10" title="Enter a valid phone number" maxlength="10" required><br>
-                    <textarea name="message" rows="5" id="msg" placeholder="What do you want to say?"></textarea><br>
-                    <button class="btn button1" id="submission" type="submit" name="send">Send</button>
-</form>
+                <p class="alert"> </p>
+                <form name="callback" id="contactForm" action="post">      
+                 <input type="text" name="Name" id="name" placeholder="Your Name" required><br>
+                 <input type="email" name="mail" id="email" placeholder="Your E-mail id" required><br>
+                <input type="tel" name="number" id="phone"  placeholder="Phone Number" minlength="10" pattern="[0-9]" title="Enter a valid phone number" maxlength="10" required><br>
+               <textarea name="message" rows="5" id="msg" placeholder="What do you want to say?"></textarea><br>
+                <button class="btn button1" id="submission" type="submit" name="send">Send</button>
+                </form>
             </div>
             <div class=" padding col col-12 col-sm-12 col-md-6">
                 <img src="images/me_2.jpg" data-aos="fade-down"
                      data-aos-easing="linear"
                      data-aos-duration="1500">
                 <p style="opacity: 0.7" data-aos="fade-up">"I'm always open to meeting and chatting with like minded people.<br> Don't be shy and
-                    drop me a message. <br>You'd be surprised at how q
-                    uickly I'll get back to you!" </p>
+                    drop me a message. <br>You'd be surprised at how quickly I'll get back to you!" </p>
             </div>
         </div>
     </div>
