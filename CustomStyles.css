@@ -3,9 +3,6 @@
 body,html {
     font-family: 'Noto Sans HK', sans-serif;
     color: #ffffff;
-    /*background-image: url("images/Inkedbackground_LI.jpg");
-    background-color: black;
-    background-repeat:no-repeat ;*/
     margin: auto;
     background-color: black;
 }
@@ -26,6 +23,10 @@ nav a img{
 #banner{
     padding-top: 150px;
     padding-bottom: 50px;
+    background-image: url("images/Inkedbackground_LI.jpg");
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: center;
 }
 
 .button{
@@ -50,6 +51,7 @@ nav a img{
 .my-name{
     color: #ef0f30;
     font-size: 3em;
+    margin: auto;
     font-weight: 900;
    letter-spacing: 0.3em;
     text-transform: uppercase;
@@ -92,7 +94,9 @@ nav a img{
     padding-top: 150px;
     padding-bottom: 150px;
 }
-
+.carousel-indicators li {
+    background-color: black;
+}
 .about-me-head{
     font-size: 5rem;
     opacity: 0.2;
@@ -126,8 +130,9 @@ nav a img{
 #my-work{
     background-image: url("images/Inkedbackground_LI.jpg");
     background-attachment:fixed ;
-    background-position: center;
     background-size: cover;
+    background-position: center;
+
     padding-bottom: 200px ;
     padding-top: 100px;
 }
@@ -136,9 +141,10 @@ nav a img{
     width:300px;
     height: 300px;
     background-color: white;
-    border-radius: 10%;
+   border-radius: 10%;
     transition: all 1s;
     overflow: hidden;
+    margin-top:10px; 
 }
 .websites .web-search-icon{
     visibility: hidden;
@@ -168,15 +174,7 @@ span{
     color: #ef0f30;
     font-size: 5rem;
     opacity: 0.5rem;
-
-
-
 }
-
-
-
-
-
 /*footer */
 
 #footer{
@@ -193,6 +191,21 @@ hr{
     .my-name{
         letter-spacing: 0.9em;
     }
+    #clients-counter,#Projects-counter{
+        color: #ef0f30;
+        font-size: 2rem;
+        opacity: 0.5rem;
+
+
+
+    }
+    #banner{
+        background-image: url("images/Inkedbackground_LI.jpg");
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: center;
+
+    }
 }
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -200,18 +213,19 @@ hr{
         padding: 0;
         margin: 0;
     }
-    .background{
-        width: auto;
-    }
     .heading{
         font-size: 1.5em;
     }
     #banner{
         padding-bottom: 240px;
+        background-image: url("images/Inkedbackground_LI.jpg");
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: center;
     }
     .my-name{
         letter-spacing: 0;
-        width: 315px;
+        margin: auto;
     }
     .websites{
         width:200px;
@@ -225,7 +239,8 @@ hr{
 
     }
     .bd-example{
-        width: 310px;
+        width: 70%;
+        margin: auto;
     }
     p.text{
         font-size: 0.8em;
@@ -236,11 +251,19 @@ hr{
     }
     hr{
         align-item: center;
-        width: 300px;
+        width: 70%;
         margin: auto;
     }
     #get-started h1{
         font-size: 50px;
+    }
+    #clients-counter,#Projects-counter{
+        color: #ef0f30;
+        font-size: 3rem;
+        opacity: 0.5rem;
+
+
+
     }
 
     }
@@ -250,18 +273,36 @@ hr{
 
 
 //* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767px) {
+@media (max-width: 767.9px) {
     .websites{
     width:220px;
     height: 220px;
 }
+#banner{
+    background-image: url("images/Inkedbackground_LI.jpg");
+background-attachment:fixed ;
+background-size: cover;
+background-position: center;
+
+}
 }
 
-/* Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
+@media (max-width: 991.98px) { 
+#banner{
+background-image: url("images/Inkedbackground_LI.jpg");
+background-attachment:fixed ;
+background-size: cover;
+background-position: center;
+}
+}
 
-/* Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
+ /* devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {#banner{
+background-image: url("images/Inkedbackground_LI.jpg");
+background-attachment:fixed ;
+background-size: cover;
+background-position: center;
+} }
 
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width

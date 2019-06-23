@@ -14,14 +14,23 @@
     <title>PortFolio</title>
 </head>
 <body>
-<div class="container">
-    <h1 class="mb-4">hello</h1>
-</div>
-
-
+<label for="input">name</label>
+<input id="input" type="text" name="name">
+<p id="msg"></p>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="validation.js">
+
+    var input = document.getElementsByTagName('input')[0];
+    var div = document.getElementById('msg');
+    input.onkeyup = function() {
+        div.innerHTML = this.value;
+    };
+
+alert('hellp')
+
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
