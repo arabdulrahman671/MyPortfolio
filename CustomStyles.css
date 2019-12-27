@@ -146,6 +146,12 @@ nav a img{
     overflow: hidden;
     margin-top:10px; 
 }
+.space-shooter{
+ background-image: url("images/space-shooter.png");
+ 
+ background-size: contain;
+ background-position: center;
+}
 .websites .web-search-icon{
     visibility: hidden;
 }
@@ -272,7 +278,7 @@ hr{
 
 
 
-//* Small devices (landscape phones, less than 768px)*/
+/* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.9px) {
     .websites{
     width:220px;
@@ -304,8 +310,8 @@ background-size: cover;
 background-position: center;
 } }
 
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
+/* Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width*/
 
 
 
